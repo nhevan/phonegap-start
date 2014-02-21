@@ -1,0 +1,29 @@
+#demo{
+    width: 50%;
+    margin: 10px auto;
+	background-color: gray;
+	border:2px solid black;
+	border-radius:4px;
+	color:white;
+	text-align:center;
+	
+ }
+ #demo:hover{
+	background-color: white;
+	color:black;
+	cursor:pointer;
+ }
+ #para1{
+    width: 50%;
+    margin: 0px auto;
+	background-color: gray;
+	border:2px solid black;
+	border-radius:4px;
+	color:white;
+	text-align:center;
+ }
+ #para1:hover{
+	background-color: white;
+	color:black;
+	cursor:pointer;
+ }
