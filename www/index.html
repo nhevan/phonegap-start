@@ -29,7 +29,7 @@
 		<script>
 			$( document ).ready(function() {
 				$("#demo").click(function(){
-					$("#para1").slideToggle('slow');
+					$(".btnsx").slideToggle('slow');
 				});
 			});
 			
@@ -37,8 +37,13 @@
     </head>
     <body>
         <div id="logox"><img src="img/logo.png" alt="SynTech" /></div>
-        <div id="demo">demo</div>
-        <p id="para1" style="display:none">Test paragraph</p>
+        <div id="demo">
+            <a href="#" class="btns">About Us</a>
+            <a href="#" class="btns">Services</a>
+            <a href="#" class="btns">Team Members</a>
+            <a href="#" class="btns">Projects</a>
+            <a href="#" class="btns">Testimonials</a>
+            <a href="#" class="btns">Contact Us</a>
         </div>
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
