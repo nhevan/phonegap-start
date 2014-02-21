@@ -1,5 +1,6 @@
 .btns{
- 	max-width: 40%;
+ 	max-width: 80%;
+ 	font-size: 1.3em;
  	margin: 10px auto;
 	background-color: #202020;
 	border:2px solid black;
@@ -34,6 +35,9 @@
  	text-align: center;
  	padding-top: 10px;
  	padding-bottom: 10px;
+ }
+ #logox img{
+ 	width: 60%;
  }
  .footerx {
  	background: #202020;
