@@ -31,7 +31,24 @@
 	cursor:pointer;
  }
  #logox {
+ 	background: #202020;
  	text-align: center;
- 	margin: 15px;
- 	background: url('img/dark.png') repeat;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+ .footerx {
+ 	background: #202020;
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	padding-bottom: 10px;
+ }
+ .bodyx {
+ 	background-image: url('../img/dark.png');
+ 	text-align: center;
+ 	padding-top: 10px;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ 	padding-bottom: 10px;
  }
