@@ -34,7 +34,10 @@
                 $("#demo").click(function(){
                     $(".btnsx").slideToggle('slow');
                 });
-                $("#entireBody").css("min-height",heightx);
+                var $foo =$(document).width();
+                var $bar =$foo/7;
+                $(".bodyx").css("min-height",$foo);
+                $(".btns").css("min-height",$bar);
             });
 		</script>
     </head>
