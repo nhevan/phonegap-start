@@ -59,3 +59,20 @@
  .mark {
  	border: 1px solid red;
  }
+ #btn1 {
+ 	position:relative;
+	animation:mymove 2s;
+	-webkit-animation:mymove 2s; /*Safari and Chrome*/
+}
+
+@keyframes mymove
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
