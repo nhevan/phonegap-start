@@ -61,40 +61,8 @@ body {
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;
      position:relative;
-animation-name:myfirst;
-animation-duration:5s;
-animation-timing-function:linear;
-animation-delay:2s;
-animation-iteration-count:infinite;
-animation-direction:alternate;
-animation-play-state:running;
-/* Safari and Chrome: */
--webkit-animation-name:myfirst;
--webkit-animation-duration:5s;
--webkit-animation-timing-function:linear;
--webkit-animation-delay:2s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
-}
 
-@keyframes myfirst
-{
-0%   {background:url(../img/logo.png); left:500px; top:300px;}
-25%  {background:url(../img/logo.png); left:1000px; top:500px;}
-50%  {background:url(../img/logo.png); left:1000px; top:200px;}
-75%  {background:url(../img/logo.png); left:500px; top:700px;}
-100% {background:url(../img/logo.png); left:500px; top:300px;}
 }
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
-{
-0%   {background:url(../img/logo.png); left:500px; top:300px;}
-25%  {background:url(../img/logo.png); left:1000px; top:500px;}
-50%  {background:url(../img/logo.png); left:1000px; top:200px;}
-75%  {background:url(../img/logo.png); left:300px; top:700px;}
-100% {background:url(../img/logo.png); left:500px; top:300px;}
-}                                	
 
 
 /* Landscape layout (with min-width) */
