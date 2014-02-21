@@ -25,17 +25,20 @@
         <link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jQuery2.min.js" type="text/javascript"></script>
-        <title>Hello World</title>
+        <title>SynTech</title>
 		<script>
-			$( document ).ready(function() {
-				$("#demo").click(function(){
-					$(".btnsx").slideToggle('slow');
-				});
-			});
 			
+            var heightx=window.innerHeight;
+
+            $( document ).ready(function() {
+                $("#demo").click(function(){
+                    $(".btnsx").slideToggle('slow');
+                });
+                $("#entireBody").css("height",heightx);
+            });
 		</script>
     </head>
-    <body>
+    <body id="entireBody">
         <div id="logox"><img src="img/logo.png" alt="SynTech" /></div>
         <div class="bodyx">
             <a href="#" class="btns">About Us</a>
@@ -46,8 +49,8 @@
             <a href="#" class="btns">Contact Us</a>
         </div>
         <div class="footerx">
-            <a href="http://facebook.com">Facebook</a>
-            <a href="http://plus.google.com">Google+</a>
+            <a href="http://facebook.com"><img src="img/facebook.png"/></a>
+            <a href="http://plus.google.com"><img src="img/facebook.png"/></a>
             <a href="http://linkedin.com">LinkedIn</a>
             <p style="color:white;">© 2014 SynTech. All rights reserved.</p>
         </div>
