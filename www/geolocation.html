@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Device Properties Example</title>
+    <title>SynTech</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -42,4 +42,11 @@
   <body>
     <p id="geolocation">Finding geolocation...</p>
   </body>
+  <script type="text/javascript"> 
+    window.onload = function () { 
+      setTimeout(function () { 
+        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+      }, 3000); 
+    } 
+    </script>
 </html>
