@@ -8,7 +8,8 @@
         
     window.onload = function () { 
       setTimeout(function () { 
-          navigator.geolocation.getCurrentPosition(onRefresh, onError);
+           var element = document.getElementById('geolocation');
+        element.innerHTML = 'updated';
       }, 3000); 
     } 
  
