@@ -3,17 +3,19 @@
   <head>
     <title>Device Properties Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
     <script type="text/javascript" charset="utf-8">
-        
-   
-    // Wait for device API libraries to load
+
+    // Wait for PhoneGap to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
-    var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { frequency: 3000 });
-    // device APIs are available
+
+    var watchID = null;
+
+    // PhoneGap is ready
     //
     function onDeviceReady() {
+        // Update every 3 seconds
         var options = { frequency: 3000 };
         watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
     }
@@ -22,27 +24,31 @@
     //
     function onSuccess(position) {
         var element = document.getElementById('geolocation');
-        element.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
-                            'Longitude: '          + position.coords.longitude             + '<br />' +
-                            'Altitude: '           + position.coords.altitude              + '<br />' +
-                            'Accuracy: '           + position.coords.accuracy              + '<br />' +
-                            'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
-                            'Heading: '            + position.coords.heading               + '<br />' +
-                            'Speed: '              + position.coords.speed                 + '<br />' +
-                            'Timestamp: '          + position.timestamp                    + '<br />';
+        element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
+                            'Longitude: ' + position.coords.longitude     + '<br />' +
+                            '<hr />'      + element.innerHTML;
     }
-   
+
+    // clear the watch that was started earlier
+    // 
+    function clearWatch() {
+        if (watchID != null) {
+            navigator.geolocation.clearWatch(watchID);
+            watchID = null;
+        }
+    }
+
     // onError Callback receives a PositionError object
     //
     function onError(error) {
-        alert('code: '    + error.code    + '\n' +
-              'message: ' + error.message + '\n');
+      alert('code: '    + error.code    + '\n' +
+            'message: ' + error.message + '\n');
     }
 
     </script>
   </head>
   <body>
-    <p id="geolocation">Finding geolocation...</p>
+    <p id="geolocation">Watching geolocation...</p>
+    <button onclick="clearWatch();">Clear Watch</button>     
   </body>
- 
 </html>
