@@ -1,21 +1,25 @@
 .btns{
  	max-width: 80%;
- 	font-size: 1.3em;
- 	margin: 10px auto;
+ 	font-size: 3.5em;
+ 	margin: 4% auto;
 	background-color: #202020;
-	border:2px solid black;
-	border-radius:4px;
+	border:10% solid black;
+	border-radius:14%;
 	color:white;
 	text-align:center;
-	padding: 10px;
+	padding-top: 4%;
 	display: block;
 	text-decoration: none;
-	vertical-align: middle;
+	align-self:center;
+	box-shadow: 0px 0px 30px #ec572c;
+	/*vertical-align: center;*/
 }
 .btns:hover{
-	background-color: white;
+	background-color: #ec572c;
 	color:black;
 	cursor:pointer;
+	text-decoration: none;
+	font-weight: bold;
  }
  #para1{
     width: 50%;
@@ -61,17 +65,107 @@
  }
  #btn1 {
  	position:relative;
-	animation:mymove 2s;
-	-webkit-animation:mymove 2s; /*Safari and Chrome*/
+	animation:mymove1 2s;
+	-webkit-animation:mymove1 2s; /*Safari and Chrome*/
 }
 
-@keyframes mymove
+@keyframes mymove1
 {
 from {left:-200px;}
 to {left:0px;}
 }
 
-@-webkit-keyframes mymove /*Safari and Chrome*/
+@-webkit-keyframes mymove1 /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+ #btn2 {
+ 	position:relative;
+	animation:mymove2 3s;
+	-webkit-animation:mymove2 3s; /*Safari and Chrome*/
+}
+
+@keyframes mymove2
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove2 /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+ #btn3 {
+ 	position:relative;
+	animation:mymove3 4s;
+	-webkit-animation:mymove3 4s; /*Safari and Chrome*/
+}
+
+@keyframes mymove3
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove3 /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+ #btn4 {
+ 	position:relative;
+	animation:mymove4 5s;
+	-webkit-animation:mymove4 5s; /*Safari and Chrome*/
+}
+
+@keyframes mymove4
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove4 /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+ #btn5 {
+ 	position:relative;
+	animation:mymove5 6s;
+	-webkit-animation:mymove5 6s; /*Safari and Chrome*/
+}
+
+@keyframes mymove5
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove5 /*Safari and Chrome*/
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+ #btn6 {
+ 	position:relative;
+	animation:mymove6 7s;
+	-webkit-animation:mymove6 7s; /*Safari and Chrome*/
+}
+
+@keyframes mymove6
+{
+from {left:-200px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove6 /*Safari and Chrome*/
 {
 from {left:-200px;}
 to {left:0px;}
