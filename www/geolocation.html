@@ -5,7 +5,13 @@
 
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
-
+        
+    window.onload = function () { 
+      setTimeout(function () { 
+          navigator.geolocation.getCurrentPosition(onSuccess, onError);
+      }, 3000); 
+    } 
+ 
     // Wait for device API libraries to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -42,19 +48,5 @@
   <body>
     <p id="geolocation">Finding geolocation...</p>
   </body>
-  <script type="text/javascript"> 
-window.onload = function () { 
-  setTimeout(function () { 
-    var div = document.getElementById('geolocation'); 
-    div.innerHTML = 'Latitude: '           + position.coords.latitude              + '<br />' +
-                    'Longitude: '          + position.coords.longitude             + '<br />' +
-                    'Altitude: '           + position.coords.altitude              + '<br />' +
-                    'Accuracy: '           + position.coords.accuracy              + '<br />' +
-                    'Altitude Accuracy: '  + position.coords.altitudeAccuracy      + '<br />' +
-                    'Heading: '            + position.coords.heading               + '<br />' +
-                    'Speed: '              + position.coords.speed                 + '<br />' +
-                    'Timestamp: '          + position.timestamp                    + '<br />';  
-  }, 3000); 
-} 
-</script>
+ 
 </html>
