@@ -14,13 +14,9 @@
 
     // PhoneGap is ready
     //
-
     function onDeviceReady() {
         // Update every 3 seconds
-        var element = document.getElementById('test');
-        element.innerHTML = "deviceready";
-        var options = { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true };
-       
+        var options = { frequency: 3000 };
         watchID = navigator.geolocation.watchPosition(onSuccess, onError, options);
     }
 
@@ -44,6 +40,5 @@
   </head>
   <body>
     <p id="geolocation">Watching geolocation...</p>
-    <p id="test"></p>
   </body>
 </html>
